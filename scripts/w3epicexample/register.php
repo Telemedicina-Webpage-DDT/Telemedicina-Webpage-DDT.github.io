@@ -1,21 +1,21 @@
 <html>
 <head>
-	<title>User registration form- PHP MySQL Ligin System | W3Epic.com</title>
+	<title>Registro de Usuario - Telemedicina</title>
 </head>
 <body>	
-<h1>User registration form- PHP MySQL Ligin System | W3Epic.com</h1>
+<h1>Rellene los siguientes campos</h1>
 <?php
 require_once("db_const.php");
 if (!isset($_POST['submit'])) {
 ?>	<!-- The HTML registration form -->
 	<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-		Username: <input type="text" name="username" /><br />
-		Password: <input type="password" name="password" /><br />
-		First name: <input type="text" name="first_name" /><br />
-		Last name: <input type="text" name="last_name" /><br />
-		Email: <input type="type" name="email" /><br />
+		Usuario: <input type="text" name="username" /><br />
+		Contraseña: <input type="password" name="password" /><br />
+		Primer Nombre: <input type="text" name="first_name" /><br />
+		Apellido: <input type="text" name="last_name" /><br />
+		E-mail: <input type="type" name="email" /><br />
 
-		<input type="submit" name="submit" value="Register" />
+		<input type="submit" name="submit" value="Ingrese" />
 	</form>
 <?php
 } else {
