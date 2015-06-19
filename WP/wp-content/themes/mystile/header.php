@@ -78,7 +78,7 @@ global $woo_options, $woocommerce;
 
 
 	    <hgroup>
-
+            <h1><img src="http://localhost/WP/wp-content/uploads/2015/06/logo1.png" border=0 alt="The Golden Hat" /></h1>
 	    	 <?php
 			    $logo = esc_url( get_template_directory_uri() . '/images/logo.png' );
 				if ( isset( $woo_options['woo_logo'] ) && $woo_options['woo_logo'] != '' ) { $logo = $woo_options['woo_logo']; }
