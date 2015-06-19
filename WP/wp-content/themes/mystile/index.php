@@ -17,7 +17,7 @@ if ( ! function_exists( 'wp' ) && ! empty( $_SERVER['SCRIPT_FILENAME'] ) && base
 	global $woo_options;
 	
 ?>
-
+HOLA
     <?php if ( $woo_options[ 'woo_homepage_banner' ] == "true" ) { ?>
     	
     	<div class="homepage-banner">

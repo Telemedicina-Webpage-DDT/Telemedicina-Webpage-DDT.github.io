@@ -22,7 +22,7 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
     <div id="content" class="page col-full">
     
     	<?php woo_main_before(); ?>
-    	
+    	HOLA
 		<section id="main" class="col-left"> 			
 
         <?php

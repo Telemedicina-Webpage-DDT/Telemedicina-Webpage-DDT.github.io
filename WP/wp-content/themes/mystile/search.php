@@ -28,7 +28,7 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
             	
 		<?php if ( have_posts() ) : $count = 0; ?>
             
-            <header class="archive_header"><?php echo __( 'Search results:', 'woothemes' ) . ' '; the_search_query(); ?></header>
+            <header class="archive_header"><?php echo __( 'Resultados de su búsqueda:', 'woothemes' ) . ' '; the_search_query(); ?></header>
 
 			<div class="fix"></div>                
 			        
@@ -50,7 +50,7 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 			<?php else : ?>
 	        
 	            <article <?php post_class(); ?>>
-	                <p><?php _e( 'Sorry, no posts matched your criteria.', 'woothemes' ); ?></p>
+	                <p><?php _e( 'No hubo coincidencias :( ', 'woothemes' ); ?></p>
 	            </article><!-- /.post -->
 	        
 	        <?php endif; ?>

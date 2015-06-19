@@ -92,7 +92,7 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
 			} else {
 		?>
 			<article <?php post_class(); ?>>
-            	<p><?php _e( 'Sorry, no posts matched your criteria.', 'woothemes' ); ?></p>
+            	<p><?php _e( 'No hubo coincidencias :( ', 'woothemes' ); ?></p>
 			</article><!-- .post -->             
        	<?php } ?>  
         
