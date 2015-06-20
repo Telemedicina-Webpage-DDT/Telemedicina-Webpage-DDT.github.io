@@ -1,0 +1,33 @@
+body {padding:0; margin:0; overflow-x: hidden; font-size:14px; line-height:22px; font-family:'Open Sans'; font-weight: 400;}
+ul {padding:0; margin:0;}
+li {list-style:none; padding:0; margin:0; font-size:14px; line-height:22px;}
+a {text-decoration:none; transition: color 0.3s;}
+img {border:none;}
+h3 {font-size:30px; line-height: 38px; font-family:'Open Sans'; color:#2c2c2c; margin:0; padding:0; display:block; font-weight: 300;}
+h4 {font-size:16px; font-family:'Open Sans'; color:#2c2c2c; margin:0; padding:0; display:block;}
+h5 {font-size:16px; line-height: 30px; font-family:'Open Sans'; color:#fff; margin:0; padding:0; display:block; border-bottom: 1px solid #999; }
+p {padding-right:24px;}
+code {color:#555555;}
+pre {overflow-x:auto; white-space:pre-wrap; white-space: -moz-pre-wrap !important; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;background-color:#f3f3f3;padding:32px;}
+.content_element:nth-child(odd) pre {background:#fff;}
+a {color: #1aa294;font-weight:500;}
+a:hover {color: #1aa294 !important;text-decoration: underline !important;}
+
+.centered {text-align:center;}
+.margin-top {margin-top:24px;}
+.margin-bottom {margin-bottom:24px;}
+.clear {clear:both;}
+.content_wrapper {width:100%; padding-left:340px; margin-right:-600px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.sidebar {width:300px; padding:0 20px; position:fixed; height:100%; overflow-y:auto; top:0; left:0; background: #E6E6E6;}
+.sidebar-logo {padding-top: 24px;}
+.sidebar_block {margin-top:24px; margin-bottom:24px;}
+.sidebar_block > ul {padding-top: 8px;}
+.sidebar_block ul {padding-left: 12px;}
+.sidebar_block a {font-size: 14px; line-height: 22px;}
+.sidebar_block a, .sidebar_block h5 {color: #222;}
+.content_element {padding:48px 0;  padding-left:24px;}
+.content_element:nth-child(odd) {background:#f3f3f3; border-top: 1px solid #d6d6d6; border-bottom: 1px solid #d6d6d6;}
+.spacing {padding-top: 48px;}
+.content li {list-style:disc;list-style-position:inside;}
+.mark {color:#1aa294;}
+.logo {height:64px;width:auto;margin-bottom:24px;}

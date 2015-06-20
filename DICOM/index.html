@@ -1,13 +1,52 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <!-- support for mobile touch devices -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MediLearn Dicom DataBase</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome.min.css" rel="stylesheet">
     <link href="cornerstone.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    
+    
+    
+    <div class="navbar-header">
+                <p><img href ="http://localhost/WP" src="http://localhost/WP/wp-content/uploads/2015/06/logo1.png" class="img-responsive"  /></p>
+                <a class="navbar-brand center">Base de Datos de MediLearn</a>
+            </div>
+            <ul class="nav navbar-nav navbar-center">
+                <li><a id="help" class="button hidden-xs">Ayuda</a></li>
+                <li><a class="button" href="http://localhost/WP">Volver a MediLearn</a></li>
+            </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 text-center">
+                    </div>
+                </div>
+            </div>
+
 </head>
+    <!-- support for mobile touch devices -->
+    
 <style>
 
     /* prevent 'bounce' in scrolling */
@@ -108,32 +147,33 @@
         padding: 2px;
     }
     a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
-        background-color: #424242;
-        border-color: #4e4e4e;
+        background-color: #FFFFFF;
+        border-color: #ffffff;
     }
     .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-        background-color: #424242;
-        border-color: #4e4e4e;
+        background-color: #ffffff;
+        border-color: #ffffff;
     }
 
 </style>
-<body>
-<div id="wrap">
-    <nav class="myNav navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand">DICOM Database</a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a id="help" href="#" class="button hidden-xs">Ayuda</a></li>
-                <li><a id="about" href="#" class="button hidden-xs">Acerca</a></li>
-            </ul>
 
-        </div>
-    </nav>
+<body>
+    
+
+            
+
+       
+   
+
+
+
+
     <div class='main'>
+        
         <ul id="tabs" class="nav nav-tabs" >
+            
             <li class="active"><a href="#studyList" data-toggle="tab">Casos de estudio</a></li>
+            
         </ul>
 
         <div id="tabContent" class="tab-content">
@@ -214,7 +254,8 @@
                 </div>
              </div>
         </div>
-    </div>
+    
+        </div>
 </div>
 
 <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
