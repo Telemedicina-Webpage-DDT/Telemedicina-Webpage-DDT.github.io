@@ -1,0 +1,32 @@
+{
+    "studyList": [
+        
+        {
+            "patientName": "CT Dental",
+            "patientId": "12345678",
+            "studyDate": "20100510",
+            "modality": "CT 64",
+            "studyDescription": "Dental scan",
+            "numImages": 5,
+            "studyId": "dentalcd"
+        },
+        {
+            "patientName" : "CT Ankle",
+            "patientId" : "213213",
+            "studyDate" : "20120418",
+            "modality" : "CT",
+            "studyDescription" :"CT Ankle (3D)",
+            "numImages" : 1,
+            "studyId" : "ctankle"
+        },
+        {
+            "patientName" : "US FETAL",
+            "patientId" : "123454321",
+            "studyDate" : "20120418",
+            "modality" : "US",
+            "studyDescription" :"US FETAL",
+            "numImages" : 1,
+            "studyId" : "usjpeg"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "patientName" : "Ultrasound Fetal",
+    "patientId" : "123454321",
+    "studyDate" : "20120418",
+    "modality" : "US",
+    "studyDescription" :"US FETAL",
+    "numImages" : 2,
+    "studyId" : "usjpeg",
+    "seriesList" : [
+        {
+            "seriesDescription": "Image #1",
+            "seriesNumber" : "1",
+            "instanceList" : [
+                {"imageId" : "dicomweb://localhost:8042/instances/ef3011f2-435b914b-0ff94e41-f1e2ca82-875e1980/file"}
+            ]
+        }
+        
+    ]
+}

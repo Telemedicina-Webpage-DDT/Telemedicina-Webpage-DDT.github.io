@@ -1,0 +1,46 @@
+{
+    "patientName" : "Anonym",
+    "patientId" : "12345678",
+    "studyDate" : "20100510",
+    "modality" : "CT 64",
+    "studyDescription" :"Dental scan",
+    "numImages" : 5,
+    "studyId" : "dentalcd",
+    "seriesList" : [
+        {
+            "seriesDescription": "Image #1",
+            "seriesNumber" : "1",
+            "instanceList" : [
+                {"imageId" : "dicomweb://localhost:8042/instances/0e97eda7-c36b78e4-2ef49e22-10551e54-f3463fe4/file"}
+            ]
+        },
+        {
+            "seriesDescription": "Image #2",
+            "seriesNumber" : "2",
+            "instanceList" : [
+                {"imageId" : "dicomweb://localhost:8042/instances/792409cc-6943e472-65123f4a-b18520da-56db9e95/file"}
+            ]
+        },
+        {
+            "seriesDescription": "Image #3",
+            "seriesNumber" : "3",
+            "instanceList" : [
+                {"imageId" : "dicomweb://localhost:8042/instances/719d58b1-2a259486-7cc5919d-68a2bd30-da2cd290/file"}
+            ]
+        },
+        {
+            "seriesDescription": "Image #4",
+            "seriesNumber" : "4",
+            "instanceList" : [
+                {"imageId" : "dicomweb://localhost:8042/instances/fc1498fa-4cedf508-64b41907-d2d10eff-63b07c01/file"}
+            ]
+        },
+        {
+            "seriesDescription": "Image #5",
+            "seriesNumber" : "5",
+            "instanceList" : [
+                {"imageId" : "dicomweb://localhost:8042/instances/c3e1ce16-4730e36c-f3cfaffe-3edc7cc6-a095bc8c/file"}
+            ]
+        }
+    ]
+}

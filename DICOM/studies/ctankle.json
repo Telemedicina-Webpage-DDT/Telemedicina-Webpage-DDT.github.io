@@ -1,0 +1,19 @@
+{
+    "patientName" : "CT Ankle",
+    "patientId" : "213122",
+    "studyDate" : "20120418",
+    "modality" : "CT",
+    "studyDescription" :"CT Ankle (3D)",
+    "numImages" : 2,
+    "studyId" : "ctankle",
+    "seriesList" : [
+        {
+            "seriesDescription": "Image #1",
+            "seriesNumber" : "1",
+            "instanceList" : [
+                {"imageId" : "dicomweb://localhost:8042/instances/d1d4875a-2a8267c2-2ee4f8f0-3d9e917e-9a141930/file"}
+            ]
+        }
+        
+    ]
+}

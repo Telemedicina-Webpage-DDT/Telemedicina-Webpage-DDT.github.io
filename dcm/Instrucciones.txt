@@ -1,0 +1,4 @@
+1) descargar el servidor orthanc de http://orthanc-server.com/
+2) Iniciar google chrome con la bandera --disable-web-security (no uses el navegador para más nada que no sean pruebas)
+Usando comand line chrome.exe --disable-web-security
+3) Ingresar a localhost:8042 y en upload cargar los files .dcm que anexo en la carpeta .dcm
