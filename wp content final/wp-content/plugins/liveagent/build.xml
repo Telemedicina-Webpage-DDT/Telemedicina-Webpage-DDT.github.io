@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="liveagent" default="build" basedir=".">
+	<description>
+        deploy plugin to wordpress
+    </description>
+	<property name="wordpressPath" value="/home/juraj/work/www/wp381" />
+	<target name="compile">
+		
+	</target>
+	<target name="deploy" depends="compile">
+		<copy todir="${wordpressPath}/wp-content/plugins/liveagent" overwrite="on">
+			<fileset dir="${basedir}">
+				<include name="**" />
+				<exclude name="build.xml"/>
+				<exclude name="test/**"/>
+				<exclude name="runtest.sh"/>
+			</fileset>
+		</copy>
+	</target>
+	<target name="build" depends="deploy" />
+</project>

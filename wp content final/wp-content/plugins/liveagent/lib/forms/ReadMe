@@ -1,0 +1,29 @@
+Zebra PHP Components Framework
+
+PHP HTML Form Processor Class
+
+author     Stefan Gabos, ix at nivelzero dot ro
+version    1.2 (last revision:  September 04, 2008)
+copyright  (c) 2006 - 2008 Stefan Gabos
+
+A PHP class for HTML forms generation and validation. 
+It provides an easy and intuitive way of handling both HTML form design (based on templates) and
+basic server-side form validation. Custom validation (both server-side and client-side) can also
+be implemented very easily. It provides all the basic controls available in an HTML form like
+text controls, textarea controls, submit buttons, reset buttons, standard buttons, drop down boxes,
+radio buttons, checkboxes, image controls, hidden controls, file upload controls, password controls
+captcha and a date picker control. The class also implements some heavy XSS (Cross Site Scripting)
+injection prevention.
+
+In order for the date control to work you must also download the PHP Date Picker Class from this
+address http://stefangabos.blogspot.com/2006/05/zebra-php-framework-downloads.html and configure
+the PHP Form Generation and Validation Class by setting the datePickerPath property to point to
+the date picker class
+
+Read the documentation for more information and check out the examples to see it at work!
+
+Read the LICENSE file, provided with the package, to find out how you can use this PHP script.
+If you don't find this file, please write an email to noname at nivelzero dot ro and you will be
+sent a copy of the license file
+
+For more resources visit http://stefangabos.blogspot.com

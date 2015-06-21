@@ -1,0 +1,13 @@
+/*
+ Plugin Name: LiveAgent
+ Plugin URI: http://www.qualityunit.com/liveagent
+ Description: Plugin that enable integration with LiveAgent
+ Author: QualityUnit
+ Version: 1.0.0
+ Author URI: http://www.qualityunit.com
+ License: GPL2
+ */
+
+.logo {
+	width:177px; height:118px; background:url('../img/logo.png') no-repeat top left;
+}

@@ -1,0 +1,44 @@
+<!-- BEGIN: main -->
+<table cellpadding="5px">
+    <tr>
+        <td><div class="logo"></div></td>
+        <td>
+            <h2>{controls.LiveAgentFreeHelpdeskAndLiveChat}</h2>
+            <p>{controls.DoYouNeedHelp}</p>
+        </td>
+    </tr>
+</table>
+<div class="wrap">
+    <h2>{controls.AccountSettings}</h2>
+    {controls.errorMessages}        
+    <form method="post" action="options.php">
+        {controls.form-settings}    
+        <table class="form-table">
+            <tr>
+                <th><label for="la-url">{controls.url}: </label></th>
+                <td>
+                    {controls.la-url}
+                    <span class="description">{controls.urlWrereLaIsLcated}</span>
+                </td>            
+            </tr>           
+            <tr>
+                <th><label for="la-owner-email">{controls.username}: </label></th>
+                <td>
+                    {controls.la-owner-email}
+                    <span class="description">{controls.usernameWhichYouUsingToLogin}</span>
+                </td>            
+            </tr>
+            <tr>
+                <th><label for="la-owner-email">{controls.password}: </label></th>
+                <td>
+                    {controls.la-owner-password}
+                    <span class="description">{controls.YourPassword}</span>
+                </td>            
+            </tr>
+        </table>
+    </form>
+    <p class="submit"> 
+        <input type="submit" value="{controls.submit}" class="button-primary" id="submit" name="submit">
+    </p>
+    <a href="javascript:resetLaAccount();">{controls.resetAccount}</a>&nbsp;-&nbsp;<span class="description">{controls.resetDescription}</span>
+<!-- END: main -->

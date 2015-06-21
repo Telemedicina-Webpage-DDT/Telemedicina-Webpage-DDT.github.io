@@ -1,0 +1,97 @@
+<!--
+    NOTE THAT WE'RE NOT DEFINING NEITHER <FORM <ARGUMENTS> ></FORM> AND <INPUT TYPE="HIDDEN" NAME="MAX_FILE_SIZE">
+    BOTH BEING IN THE MAIN TEMPLATE IN THE /TEMPLATES FOLDER
+-->
+
+<!-- BEGIN: main -->
+<table>
+    <tr>
+        <td align="right">
+            {controls.label_firstname}&nbsp;
+        </td>
+        <td>
+            {controls.firstname}
+        </td>
+    </tr>
+    <!-- BEGIN: e1 -->
+    <tr>
+        <td></td>
+        <td>{errors.e1}</td>
+    </tr>
+    <!-- END: e1 -->
+    <tr>
+        <td align="right">
+            {controls.label_lastname}&nbsp;
+        </td>
+        <td>
+            {controls.lastname}
+        </td>
+    </tr>
+    <!-- BEGIN: e2 -->
+    <tr>
+        <td></td>
+        <td>{errors.e2}</td>
+    </tr>
+    <!-- END: e2 -->
+    <tr>
+        <td align="right">
+            {controls.label_email}&nbsp;
+        </td>
+        <td>
+            {controls.email}
+        </td>
+    </tr>
+    <!-- BEGIN: e3 -->
+    <tr>
+        <td></td>
+        <td>{errors.e3}</td>
+    </tr>
+    <!-- END: e3 -->
+    <tr>
+        <td align="right">
+            {controls.label_password}&nbsp;
+        </td>
+        <td>
+            {controls.password}
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            {controls.label_confirm_password}&nbsp;
+        </td>
+        <td>
+            {controls.confirm_password}
+        </td>
+    </tr>
+    <!-- BEGIN: e4 -->
+    <tr>
+        <td></td>
+        <td>{errors.e4}</td>
+    </tr>
+    <!-- END: e4 -->
+    <tr>
+        <td></td>
+        <td>{controls.captcha}</td>
+    </tr>
+    <tr>
+        <td align="right">
+            {controls.label_captcha_code}&nbsp;
+        </td>
+        <td>
+            {controls.captcha_code}
+        </td>
+    </tr>
+    <!-- BEGIN: e5 -->
+    <tr>
+        <td></td>
+        <td>{errors.e5}</td>
+    </tr>
+    <!-- END: e5 -->
+    <tr>
+        <td></td>
+        <td>
+            {controls.submit}
+        </td>
+    </tr>
+</table>
+<!-- END: main -->

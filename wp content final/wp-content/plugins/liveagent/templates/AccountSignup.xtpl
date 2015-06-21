@@ -1,0 +1,20 @@
+<!-- BEGIN: main -->
+<table cellpadding="5px">
+    <tr>
+        <td><div class="logo"></div></td>
+        <td>
+            <h2>{controls.LiveAgentFreeHelpdeskAndLiveChat}</h2>
+            <p>{controls.LiveAgentFreeHelpdeskAndLiveChatDescription}</p>
+        </td>
+    </tr>
+</table>
+<div class="wrap">
+    <h2>{controls.CreateYourFreeAccount}</h2>
+    <p class="submit">
+        <a href="https://www.ladesk.com/" target="_blank"> 
+            <input type="button" value="{controls.submit}" class="button-primary" id="submit" name="button" />
+        </a>
+    </p>
+    <a href="{controls.skipCreateUrl}">{controls.SkipThisStepIHaveAccount}</a>
+</div>
+<!-- END: main -->

@@ -1,0 +1,84 @@
+<!--
+    NOTE THAT WE'RE NOT DEFINING NEITHER <FORM <ARGUMENTS> ></FORM> AND <INPUT TYPE="HIDDEN" NAME="MAX_FILE_SIZE">
+    BOTH BEING IN THE MAIN TEMPLATE IN THE /TEMPLATES FOLDER
+-->
+
+<!-- BEGIN: main -->
+<table>
+    <tr>
+        <td align="right">
+            {controls.label_admin}:&nbsp;
+        </td>
+        <td>
+            {controls.admin}
+        </td>
+    </tr>
+    <!-- BEGIN: e1 -->
+    <tr>
+        <td></td>
+        <td>{errors.e1}</td>
+    </tr>
+    <!-- END: e1 -->
+    <tr>
+        <td align="right">
+            {controls.label_select}:&nbsp;
+        </td>
+        <td>
+            {controls.select}
+        </td>
+    </tr>
+    <!-- BEGIN: e2 -->
+    <tr>
+        <td></td>
+        <td>{errors.e2}</td>
+    </tr>
+    <!-- END: e2 -->
+    <tr>
+        <td align="right">
+            {controls.label_option}:&nbsp;
+        </td>
+        <td>
+            {controls.option}
+        </td>
+    </tr>
+    <!-- BEGIN: e3 -->
+    <tr>
+        <td></td>
+        <td>{errors.e3}</td>
+    </tr>
+    <!-- END: e3 -->
+    <tr>
+        <td valign="top" align="right">
+            {controls.label_date}:&nbsp;
+        </td>
+        <td>
+            {controls.date}
+        </td>
+    </tr>
+    <!-- BEGIN: e4 -->
+    <tr>
+        <td></td>
+        <td>{errors.e4}</td>
+    </tr>
+    <!-- END: e4 -->
+    <tr>
+        <td>
+        </td>
+        <td>
+            {controls.file}
+        </td>
+    </tr>
+    <!-- BEGIN: e5 -->
+    <tr>
+        <td></td>
+        <td>{errors.e5}</td>
+    </tr>
+    <!-- END: e5 -->
+    <tr>
+        <td></td>
+        <td>
+            {controls.submit}
+        </td>
+    </tr>
+</table>
+<!-- END: main -->

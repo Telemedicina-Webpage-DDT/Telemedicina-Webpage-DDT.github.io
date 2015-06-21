@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>example</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">HTMLForm</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_HTMLForm.html" class="menu">class tree: HTMLForm</a> ]
+		  [ <a href="../elementindex_HTMLForm.html" class="menu">index: HTMLForm</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="ric">
+					<p><a href="../ric_ChangeLog.html">ChangeLog</a></p>
+					<p><a href="../ric_License.html">License</a></p>
+					<p><a href="../ric_ReadMe.html">ReadMe</a></p>
+			</div>
+      <b>Packages:</b><br />
+              <a href="../li_HTMLForm.html">HTMLForm</a><br />
+              <a href="../li_HTMLForm_Controls.html">HTMLForm_Controls</a><br />
+            <br /><br />
+                  
+      
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1 align="center">example</h1>
+<div class="php">
+<ol><li><div class="src-line">&lt;!DOCTYPE&nbsp;HTML&nbsp;PUBLIC&nbsp;&quot;-//W3C//DTD&nbsp;HTML&nbsp;4.01//EN&quot;&nbsp;&quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&lt;html&gt;</div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;</div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;PHP&nbsp;HTML&nbsp;Form&nbsp;Processor&nbsp;Class&nbsp;-&nbsp;Other&nbsp;Controls&lt;/title&gt;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;style&nbsp;type=&quot;text/css&quot;&gt;&nbsp;body&nbsp;{font-family:&nbsp;tahoma,&nbsp;arial,&nbsp;verdana,&nbsp;sans;&nbsp;font-size:&nbsp;12px;&nbsp;}&nbsp;&lt;/style&gt;</div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;For&nbsp;this&nbsp;example&nbsp;to&nbsp;work&nbsp;you&nbsp;need&nbsp;the&nbsp;PHP&nbsp;Date&nbsp;Picker&nbsp;Class!&lt;/h2&gt;</div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;strong&gt;Quick&nbsp;tip:&nbsp;&lt;/strong&gt;Notice&nbsp;the&nbsp;'&amp;'s&nbsp;in&nbsp;code&nbsp;-&nbsp;this&nbsp;is&nbsp;there&nbsp;in&nbsp;order&nbsp;for&nbsp;$obj&nbsp;to&nbsp;really&nbsp;point&nbsp;to&nbsp;the&nbsp;newly&nbsp;added&nbsp;control&nbsp;in&nbsp;PHP4&lt;/p&gt;</div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;create&nbsp;a&nbsp;custom&nbsp;function&nbsp;that&nbsp;compares&nbsp;a&nbsp;control's</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;submitted&nbsp;value&nbsp;with&nbsp;another&nbsp;value</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">valueCompare</span><span class="src-sym">(</span><span class="src-var">$controlValue</span><span class="src-sym">,&nbsp;</span><span class="src-var">$valueToCompareTo</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;if&nbsp;values&nbsp;are&nbsp;not&nbsp;the&nbsp;same</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-var">$controlValue&nbsp;</span>!=&nbsp;<span class="src-var">$valueToCompareTo</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;return&nbsp;false</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-id">false</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;return&nbsp;true&nbsp;if&nbsp;everything&nbsp;is&nbsp;ok</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">return&nbsp;</span><span class="src-id">true</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;require&nbsp;the&nbsp;htmlform&nbsp;class</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;require&nbsp;<span class="src-str">'../class.htmlform.php'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;instantiate&nbsp;the&nbsp;class</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$form&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><a href="../HTMLForm/HTMLForm.html#methodHTMLForm">HTMLForm</a><span class="src-sym">(</span><span class="src-str">'form'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'post'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;specify&nbsp;the&nbsp;date&nbsp;to&nbsp;the&nbsp;datepicker&nbsp;class&nbsp;(a&nbsp;member&nbsp;of&nbsp;the&nbsp;Zebra&nbsp;PHP&nbsp;Framework)</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;if&nbsp;class&nbsp;is&nbsp;not&nbsp;found&nbsp;the&nbsp;execution&nbsp;will&nbsp;break&nbsp;when&nbsp;you&nbsp;try&nbsp;to&nbsp;instantiate&nbsp;a&nbsp;date&nbsp;control</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$form</span><span class="src-sym">-&gt;</span><span class="src-id"><a href="../HTMLForm/HTMLForm.html#var$datePickerPath">datePickerPath</a>&nbsp;</span>=&nbsp;<span class="src-str">'../../datepicker/class.datepicker.php'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;add&nbsp;a&nbsp;label&nbsp;to&nbsp;the&nbsp;'admin'&nbsp;control&nbsp;-&nbsp;used&nbsp;in&nbsp;the&nbsp;template&nbsp;file&nbsp;as&nbsp;{controls.label_admin}</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$form</span><span class="src-sym">-&gt;</span><a href="../HTMLForm/HTMLForm.html#methodadd">add</a><span class="src-sym">(</span><span class="src-str">'label'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'label_admin'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'name'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Enter&nbsp;\'admin\'&nbsp;here'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;add&nbsp;a&nbsp;text&nbsp;control&nbsp;named&nbsp;&quot;admin&quot;&nbsp;-&nbsp;used&nbsp;in&nbsp;the&nbsp;template&nbsp;file&nbsp;as&nbsp;{controls.admin}</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj&nbsp;</span>=&nbsp;<span class="src-sym">&amp;&nbsp;</span><span class="src-var">$form</span><span class="src-sym">-&gt;</span><a href="../HTMLForm/HTMLForm.html#methodadd">add</a><span class="src-sym">(</span><span class="src-str">'text'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'admin'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;set&nbsp;the&nbsp;field&nbsp;as&nbsp;mandatory</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj</span><span class="src-sym">-&gt;</span><span class="src-id">setRule</span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'mandatory'&nbsp;</span>=&gt;&nbsp;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'e1'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'The&nbsp;above&nbsp;field&nbsp;is&nbsp;mandatory!'</span><span class="src-sym">)))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;add&nbsp;a&nbsp;custom&nbsp;validation&nbsp;rule</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj</span><span class="src-sym">-&gt;</span><span class="src-id">setRule</span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'custom'&nbsp;</span>=&gt;&nbsp;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'valueCompare'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'admin'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'e1'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'You&nbsp;must&nbsp;enter&nbsp;\'admin\'!'</span><span class="src-sym">)))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;add&nbsp;a&nbsp;label&nbsp;to&nbsp;the&nbsp;'select'&nbsp;control&nbsp;-&nbsp;used&nbsp;in&nbsp;the&nbsp;template&nbsp;file&nbsp;as&nbsp;{controls.label_select}</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$form</span><span class="src-sym">-&gt;</span><a href="../HTMLForm/HTMLForm.html#methodadd">add</a><span class="src-sym">(</span><span class="src-str">'label'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'label_select'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'select'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Select&nbsp;a&nbsp;country'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;add&nbsp;a&nbsp;select&nbsp;control&nbsp;named&nbsp;&quot;select&quot;&nbsp;-&nbsp;used&nbsp;in&nbsp;the&nbsp;template&nbsp;file&nbsp;as&nbsp;{controls.select}</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj&nbsp;</span>=&nbsp;<span class="src-sym">&amp;&nbsp;</span><span class="src-var">$form</span><span class="src-sym">-&gt;</span><a href="../HTMLForm/HTMLForm.html#methodadd">add</a><span class="src-sym">(</span><span class="src-str">'select'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'select'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;add&nbsp;some&nbsp;options&nbsp;to&nbsp;the&nbsp;select&nbsp;control</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;NOTE&nbsp;THAT,&nbsp;IF&nbsp;THE&nbsp;&quot;MULTIPLE&quot;&nbsp;ATTRIBUTE&nbsp;IS&nbsp;NOT&nbsp;SET,&nbsp;THE&nbsp;FIRST&nbsp;OPTION&nbsp;WILL&nbsp;BE&nbsp;ALWAYS&nbsp;CONSIDERED&nbsp;AS&nbsp;THE</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;&quot;NOTHING&nbsp;IS&nbsp;SELECTED&quot;&nbsp;STATE&nbsp;OF&nbsp;THE&nbsp;CONTROL!</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj</span><span class="src-sym">-&gt;</span><span class="src-id">addOptions</span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'-&nbsp;select&nbsp;-'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'ro'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'Romania'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'us'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'United&nbsp;States'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'br'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'Brazil'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'de'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'Germany'</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;set&nbsp;the&nbsp;field&nbsp;as&nbsp;mandatory</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj</span><span class="src-sym">-&gt;</span><span class="src-id">setRule</span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'mandatory'&nbsp;</span>=&gt;&nbsp;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'e2'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Select&nbsp;a&nbsp;country!'</span><span class="src-sym">)))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;add&nbsp;a&nbsp;label&nbsp;to&nbsp;the&nbsp;'option'&nbsp;control&nbsp;-&nbsp;used&nbsp;in&nbsp;the&nbsp;template&nbsp;file&nbsp;as&nbsp;{controls.label_option}</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$form</span><span class="src-sym">-&gt;</span><a href="../HTMLForm/HTMLForm.html#methodadd">add</a><span class="src-sym">(</span><span class="src-str">'label'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'label_option'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'option'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Select&nbsp;an&nbsp;option'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;add&nbsp;a&nbsp;select&nbsp;control,&nbsp;having&nbsp;the&nbsp;name&nbsp;attribute&nbsp;set&nbsp;to&nbsp;&quot;option[]&quot;&nbsp;and&nbsp;the&nbsp;id&nbsp;attributes&nbsp;set&nbsp;to&nbsp;&quot;option&quot;,</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;no&nbsp;default&nbsp;value,&nbsp;and&nbsp;some&nbsp;HTML&nbsp;attributes&nbsp;set&nbsp;like&nbsp;&quot;multiple&quot;,&nbsp;&quot;size&quot;&nbsp;and&nbsp;&quot;style&quot;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;note&nbsp;the&nbsp;'[]'&nbsp;at&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;name&nbsp;in&nbsp;order&nbsp;to&nbsp;be&nbsp;able&nbsp;to&nbsp;submit&nbsp;selected&nbsp;options&nbsp;as&nbsp;an&nbsp;array</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;also&nbsp;note&nbsp;that&nbsp;the&nbsp;id&nbsp;attribute&nbsp;will&nbsp;be&nbsp;name&nbsp;of&nbsp;the&nbsp;control&nbsp;with&nbsp;the&nbsp;'[]'&nbsp;stripped&nbsp;and&nbsp;therefore</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;in&nbsp;the&nbsp;template&nbsp;file,&nbsp;you'll&nbsp;be&nbsp;able&nbsp;to&nbsp;call&nbsp;this&nbsp;control's&nbsp;output&nbsp;by&nbsp;using&nbsp;{controls.option}</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj&nbsp;</span>=&nbsp;<span class="src-sym">&amp;&nbsp;</span><span class="src-var">$form</span><span class="src-sym">-&gt;</span><a href="../HTMLForm/HTMLForm.html#methodadd">add</a><span class="src-sym">(</span><span class="src-str">'select'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'option[]'</span><span class="src-sym">,&nbsp;</span><span class="src-str">''</span><span class="src-sym">,&nbsp;</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'multiple'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'multiple'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'size'&nbsp;</span>=&gt;&nbsp;<span class="src-num">3</span><span class="src-sym">,&nbsp;</span><span class="src-str">'style'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'height:60px'</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;add&nbsp;some&nbsp;options&nbsp;to&nbsp;the&nbsp;control</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj</span><span class="src-sym">-&gt;</span><span class="src-id">addOptions</span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'I&nbsp;like&nbsp;this&nbsp;PHP&nbsp;class'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'I&nbsp;don\'t&nbsp;like&nbsp;this&nbsp;PHP&nbsp;class'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'What\'s&nbsp;PHP?'</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;set&nbsp;the&nbsp;field&nbsp;as&nbsp;mandatory</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj</span><span class="src-sym">-&gt;</span><span class="src-id">setRule</span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'mandatory'&nbsp;</span>=&gt;&nbsp;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'e3'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Select&nbsp;at&nbsp;least&nbsp;one&nbsp;option!'</span><span class="src-sym">)))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;add&nbsp;a&nbsp;label&nbsp;to&nbsp;the&nbsp;'date'&nbsp;control&nbsp;-&nbsp;used&nbsp;in&nbsp;the&nbsp;template&nbsp;file&nbsp;as&nbsp;{controls.label_date}</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$form</span><span class="src-sym">-&gt;</span><a href="../HTMLForm/HTMLForm.html#methodadd">add</a><span class="src-sym">(</span><span class="src-str">'label'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'label_date'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'date'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'What&nbsp;date&nbsp;is&nbsp;today?'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;add&nbsp;a&nbsp;select&nbsp;control&nbsp;named&nbsp;&quot;date&quot;&nbsp;-&nbsp;used&nbsp;in&nbsp;the&nbsp;template&nbsp;file&nbsp;as&nbsp;{controls.date}</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj&nbsp;</span>=&nbsp;<span class="src-sym">&amp;&nbsp;</span><span class="src-var">$form</span><span class="src-sym">-&gt;</span><a href="../HTMLForm/HTMLForm.html#methodadd">add</a><span class="src-sym">(</span><span class="src-str">'date'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'date'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;set&nbsp;some&nbsp;properties&nbsp;of&nbsp;the&nbsp;date&nbsp;picker</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj</span><span class="src-sym">-&gt;</span><span class="src-id">datePicker</span><span class="src-sym">-&gt;</span><span class="src-id">preselectedDate&nbsp;</span>=&nbsp;<a href="http://www.php.net/mktime">mktime</a><span class="src-sym">(</span><span class="src-num">0</span><span class="src-sym">,&nbsp;</span><span class="src-num">0</span><span class="src-sym">,&nbsp;</span><span class="src-num">0</span><span class="src-sym">,&nbsp;</span><a href="http://www.php.net/date">date</a><span class="src-sym">(</span><span class="src-str">'m'</span><span class="src-sym">)</span><span class="src-sym">,&nbsp;</span><a href="http://www.php.net/date">date</a><span class="src-sym">(</span><span class="src-str">'d'</span><span class="src-sym">)</span><span class="src-sym">,&nbsp;</span><a href="http://www.php.net/date">date</a><span class="src-sym">(</span><span class="src-str">'Y'</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj</span><span class="src-sym">-&gt;</span><span class="src-id">datePicker</span><span class="src-sym">-&gt;</span><span class="src-id">dateFormat&nbsp;</span>=&nbsp;<span class="src-str">'d&nbsp;M&nbsp;Y'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;set&nbsp;the&nbsp;field&nbsp;as&nbsp;mandatory</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj</span><span class="src-sym">-&gt;</span><span class="src-id">setRule</span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'mandatory'&nbsp;</span>=&gt;&nbsp;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'e4'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Please&nbsp;select&nbsp;a&nbsp;date!'</span><span class="src-sym">)))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj&nbsp;</span>=&nbsp;<span class="src-sym">&amp;&nbsp;</span><span class="src-var">$form</span><span class="src-sym">-&gt;</span><a href="../HTMLForm/HTMLForm.html#methodadd">add</a><span class="src-sym">(</span><span class="src-str">'file'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'file'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$obj</span><span class="src-sym">-&gt;</span><span class="src-id">setRule</span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'mandatory'&nbsp;</span>=&gt;&nbsp;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'e5'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Pick&nbsp;a&nbsp;file!'</span><span class="src-sym">)))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;place&nbsp;a&nbsp;submit&nbsp;button</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$form</span><span class="src-sym">-&gt;</span><a href="../HTMLForm/HTMLForm.html#methodadd">add</a><span class="src-sym">(</span><span class="src-str">'submit'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'submit'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Submit'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;validate&nbsp;the&nbsp;form</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-var">$form</span><span class="src-sym">-&gt;</span><a href="../HTMLForm/HTMLForm.html#methodvalidate">validate</a><span class="src-sym">(</span><span class="src-sym">))&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;code&nbsp;if&nbsp;form&nbsp;is&nbsp;valid</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.php.net/print_r">print_r</a><span class="src-sym">(</span><span class="src-str">'&lt;p&gt;Form&nbsp;is&nbsp;valid.&nbsp;Do&nbsp;your&nbsp;thing&nbsp;(write&nbsp;to&nbsp;db,&nbsp;send&nbsp;emails,&nbsp;whatever)&nbsp;and&nbsp;redirect.&lt;/p&gt;'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">die</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;display&nbsp;the&nbsp;form&nbsp;with&nbsp;the&nbsp;specified&nbsp;template</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$form</span><span class="src-sym">-&gt;</span><a href="../HTMLForm/HTMLForm.html#methodrender">render</a><span class="src-sym">(</span><span class="src-str">'forms/othercontrols.xtpl'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;IF&nbsp;YOU&nbsp;DO&nbsp;NOT&nbsp;NEED&nbsp;ANY&nbsp;SPECIAL&nbsp;FORMATTINGS&nbsp;IN&nbsp;YOUR&nbsp;FORM&nbsp;YOU&nbsp;CAN&nbsp;ALSO&nbsp;CALL&nbsp;THE&nbsp;RENDER&nbsp;METHOD&nbsp;WITHOUT&nbsp;SPECIFYING&nbsp;A&nbsp;TEMPLATE&nbsp;NAME</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;AND&nbsp;THUS&nbsp;LETTING&nbsp;THE&nbsp;SCRIPT&nbsp;TO&nbsp;AUTOMATICALLY&nbsp;GENERATE&nbsp;OUTPUT&nbsp;AND&nbsp;SAVING&nbsp;YOU&nbsp;OF&nbsp;EXTRA&nbsp;WORK&nbsp;PUT&nbsp;INTO&nbsp;DESIGNING&nbsp;THE&nbsp;FORM'S&nbsp;LAYOUT</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//&nbsp;COMMENT&nbsp;THE&nbsp;LINE&nbsp;ABOVE&nbsp;AND&nbsp;UNCOMMENT&nbsp;THE&nbsp;ONE&nbsp;BELOW&nbsp;TO&nbsp;SEE&nbsp;IT&nbsp;IN&nbsp;ACTION</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//$form-&gt;render();</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-php">?&gt;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</div></li>
+<li><div class="src-line">&lt;/html&gt;</div></li>
+</ol>
+</div>
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Mon, 22 Sep 2008 11:03:11 +0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.3.0RC6</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

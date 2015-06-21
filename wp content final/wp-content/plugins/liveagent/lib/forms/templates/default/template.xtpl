@@ -1,0 +1,43 @@
+<!--
+The only thing you should edit here is the 'error_msg' block!
+-->
+<!-- BEGIN: main -->
+<form name="{formName}" action="{formAction}" method="{formMethod}" class="zForm"<!-- BEGIN: enctype -->enctype="multipart/form-data"<!-- END: enctype --> {HTMLAttributes}>
+    <input type="hidden" name="HTMLForm_formname" value="{formName}">
+
+    <!-- BEGIN: file_upload -->
+
+    <input type="hidden" name="MAX_FILE_SIZE" value="{maxFileSize}">
+
+    <!-- END: file_upload -->
+
+    <!-- BEGIN: error_msg -->
+
+    <div class="error-message">
+
+        <!-- BEGIN: entry -->
+
+    	<span>{message}</span>
+
+    	<!-- END: entry -->
+
+    </div>
+
+    <!-- END: error_msg -->
+
+    <!-- BEGIN: container -->
+
+    <div class="row"><!-- BEGIN: column --><div class="column">{content}</div><!-- END: column --><!-- BEGIN: control -->{content}<!-- END: control --><!-- BEGIN: clear --><div style="clear:both"></div><!-- END: clear --></div>
+
+    <!-- BEGIN: hr -->
+
+    <div class="hr"></div>
+
+    <!-- END: hr -->
+
+	<!-- END: container -->
+
+    {content}
+</form>
+
+<!-- END: main -->

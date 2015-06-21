@@ -1,0 +1,556 @@
+<html>
+<head>
+<title>Docs For Class HTMLForm</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">HTMLForm</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+  		  [ <a href="../classtrees_HTMLForm.html" class="menu">class tree: HTMLForm</a> ]
+		  [ <a href="../elementindex_HTMLForm.html" class="menu">index: HTMLForm</a> ]
+		  [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="ric">
+					<p><a href="../ric_ChangeLog.html">ChangeLog</a></p>
+					<p><a href="../ric_License.html">License</a></p>
+					<p><a href="../ric_ReadMe.html">ReadMe</a></p>
+			</div>
+      <b>Packages:</b><br />
+              <a href="../li_HTMLForm.html">HTMLForm</a><br />
+              <a href="../li_HTMLForm_Controls.html">HTMLForm_Controls</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../HTMLForm/_class.htmlform.php.html">		class.htmlform.php
+		</a><br>
+	  </div><br />
+      
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../HTMLForm/HTMLForm.html">HTMLForm</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: HTMLForm</h1>
+Source Location: /class.htmlform.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">A HTML Form Processor PHP Class</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+                                                    <li>Stefan Gabos &lt;<a href="mailto:ix@nivelzero.ro">ix@nivelzero.ro</a>&gt;</li>
+      </ul>
+
+
+
+
+                        
+          
+      
+<h4>Version:</h4>
+<ul>
+  <li>1.2 (last revision: September 04, 2008)</li>
+</ul>
+
+<h4>Copyright:</h4>
+<ul>
+  <li>(c) 2006 - 2008 Stefan Gabos</li>
+</ul>
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../HTMLForm/HTMLForm.html#var$datePickerPath">$datePickerPath</a></li>
+    <li><a href="../HTMLForm/HTMLForm.html#var$maxFileSize">$maxFileSize</a></li>
+    <li><a href="../HTMLForm/HTMLForm.html#var$template">$template</a></li>
+  </ul>
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../HTMLForm/HTMLForm.html#methodHTMLForm">HTMLForm</a></li>
+    <li><a href="../HTMLForm/HTMLForm.html#methodadd">add</a></li>
+    <li><a href="../HTMLForm/HTMLForm.html#methodaddError">addError</a></li>
+    <li><a href="../HTMLForm/HTMLForm.html#methodaddVar">addVar</a></li>
+    <li><a href="../HTMLForm/HTMLForm.html#methodparseBlock">parseBlock</a></li>
+    <li><a href="../HTMLForm/HTMLForm.html#methodrender">render</a></li>
+    <li><a href="../HTMLForm/HTMLForm.html#methodvalidate">validate</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 27]<br />
+A HTML Form Processor PHP Class<br /><br /><p>See the documentation for more info</p><p>Read the LICENSE file, provided with the package, to find out how you can use this PHP script.</p><p>If you don't find this file, please write an email to noname at nivelzero dot ro and you will be sent a copy of the license file</p><p>For more resources visit <a href="http://stefangabos.blogspot.com">http://stefangabos.blogspot.com</a></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>example:</b>&nbsp;&nbsp;</td><td><a href="../__examplesource/exsource_zebra_zebra_classes_htmlform_examples_register.php_e1e413b9d3e08f97e75daf5af8035e58.html">example</a></td>
+  </tr>
+  <tr>
+    <td><b>example:</b>&nbsp;&nbsp;</td><td><a href="../__examplesource/exsource__zebra_classes_htmlform_examples_sendtoafriend.php_b73604ae3c7cb0537353c137fbe3bc84.html">example</a></td>
+  </tr>
+  <tr>
+    <td><b>example:</b>&nbsp;&nbsp;</td><td><a href="../__examplesource/exsource_cs_zebra_zebra_classes_htmlform_examples_radio.php_5d394cfbc7716939f24a22933cedacb2.html">example</a></td>
+  </tr>
+  <tr>
+    <td><b>example:</b>&nbsp;&nbsp;</td><td><a href="../__examplesource/exsource__zebra_classes_htmlform_examples_othercontrols.php_9b0628603a93215bad63ca995025dfee.html">example</a></td>
+  </tr>
+  <tr>
+    <td><b>example:</b>&nbsp;&nbsp;</td><td><a href="../__examplesource/exsource_ra_zebra_classes_htmlform_examples_contactform.php_02200446ed0d73e8db592191f04858cd.html">example</a></td>
+  </tr>
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>1.2 (last revision: September 04, 2008)</td>
+  </tr>
+  <tr>
+    <td><b>copyright:</b>&nbsp;&nbsp;</td><td>(c) 2006 - 2008 Stefan Gabos</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Stefan Gabos &lt;<a href="mailto:ix@nivelzero.ro">ix@nivelzero.ro</a>&gt;</td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$datePickerPath"></a>
+	<p></p>
+	<h4>$datePickerPath = <span class="value"></span></h4>
+	<p>[line 51]</p>
+  Path to Zebra Framework PHP Date Picker class<br /><br /><p>This property has no default value</p><br />
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$maxFileSize"></a>
+	<p></p>
+	<h4>$maxFileSize = <span class="value"></span></h4>
+	<p>[line 70]</p>
+  The maximum allowed size for file uploads (in bytes)<br /><br /><p>Default is 1024000 (1 MB)</p><p></p><br />
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$template"></a>
+	<p></p>
+	<h4>$template = <span class="value"></span></h4>
+	<p>[line 42]</p>
+  Template folder to use<br /><br /><p>Note that this refers to the general template of the form (the one that is in the /templates folder)</p><p>Note that only the folder of the template you wish to use needs to be specified. Inside the folder   you <strong>must</strong> have the <strong>template.xtpl</strong> file which will be automatically used</p><p>default is &quot;default&quot;</p><br />
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="methodHTMLForm"></a>
+	<h3>constructor HTMLForm <span class="smalllinenumber">[line 111]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void HTMLForm(
+string
+$formName, [string
+$formMethod = 'POST'], [string
+$formAction = ''], [string
+$HTMLAttributes = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Initializes the form<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type" valign="top">string&nbsp;&nbsp;</td>
+        <td valign="top"><b>$formName</b>&nbsp;&nbsp;</td>
+        <td>Name of the form</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+          <tr>
+        <td class="type" valign="top">string&nbsp;&nbsp;</td>
+        <td valign="top"><b>$formMethod</b>&nbsp;&nbsp;</td>
+        <td><p>(optional) Submission method of the form</p><p>Possible values are <strong>POST</strong> an <strong>GET</strong></p><p>Default is <strong>POST</strong></p></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+          <tr>
+        <td class="type" valign="top">string&nbsp;&nbsp;</td>
+        <td valign="top"><b>$formAction</b>&nbsp;&nbsp;</td>
+        <td><p>(optional) Action of the form</p><p>Default is an empty string (form will be submitted to itself)</p></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+          <tr>
+        <td class="type" valign="top">string&nbsp;&nbsp;</td>
+        <td valign="top"><b>$HTMLAttributes</b>&nbsp;&nbsp;</td>
+        <td><p>(optional) Extra HTML attributes for the form</p><p>Default is an empty string</p></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodadd"></a>
+	<h3>method add <span class="smalllinenumber">[line 203]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>reference &amp;add(
+string
+$type, mixed
+$arguments)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Adds controls to the form<br /><br /><p><em>The '&amp;' symbol in the prefix of the method name is there to specifically instruct the method to return a reference!</em></p><p><ol><li><div class="src-line">&nbsp;&nbsp;<span class="src-comm">/*</span></div></li>
+<li><div class="src-line"><span class="src-comm">&nbsp;&nbsp;notice&nbsp;the&nbsp;use&nbsp;of&nbsp;the&nbsp;&quot;&amp;&quot;&nbsp;symbol&nbsp;-&gt;&nbsp;it's&nbsp;the&nbsp;way&nbsp;we&nbsp;can&nbsp;have&nbsp;a&nbsp;reference&nbsp;to&nbsp;the&nbsp;object&nbsp;in&nbsp;PHP4</span></div></li>
+<li><div class="src-line"><span class="src-comm">&nbsp;&nbsp;*/</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;<span class="src-var">$obj&nbsp;</span>=&nbsp;<span class="src-sym">&amp;&nbsp;</span><span class="src-var">$form</span><span class="src-sym">-&gt;</span><a href="../HTMLForm/HTMLForm.html#methodadd">add</a><span class="src-sym">(</span><span class="src-str">'text'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'control_id'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Default&nbsp;text'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Reference to the newly created object</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type" valign="top">string&nbsp;&nbsp;</td>
+        <td valign="top"><b>$type</b>&nbsp;&nbsp;</td>
+        <td><p>Type of the control to add</p><p>Controls that can be added to the form:</p><p><ul><li>- button controls (<a href="../HTMLForm_Controls/HTMLForm_button.html">HTMLForm_button</a>)</li><li>- CAPTCHA controls (<a href="../HTMLForm_Controls/HTMLForm_captcha.html">HTMLForm_captcha</a>)</li><li>- checkbox controls (<a href="../HTMLForm_Controls/HTMLForm_checkbox.html">HTMLForm_checkbox</a>)</li><li>- date controls (<a href="../HTMLForm_Controls/HTMLForm_date.html">HTMLForm_date</a>)</li><li>- file controls (<a href="../HTMLForm_Controls/HTMLForm_file.html">HTMLForm_file</a>)</li><li>- hidden controls (<a href="../HTMLForm_Controls/HTMLForm_hidden.html">HTMLForm_hidden</a>)</li><li>- html controls (<a href="../HTMLForm_Controls/HTMLForm_html.html">HTMLForm_html</a>)</li><li>- image controls (<a href="../HTMLForm_Controls/HTMLForm_image.html">HTMLForm_image</a>)</li><li>- label controls (<a href="../HTMLForm_Controls/HTMLForm_label.html">HTMLForm_label</a>)</li><li>- password controls (<a href="../HTMLForm_Controls/HTMLForm_password.html">HTMLForm_password</a>)</li><li>- radio button controls (<a href="../HTMLForm_Controls/HTMLForm_radio.html">HTMLForm_radio</a>)</li><li>- reset button controls (<a href="../HTMLForm_Controls/HTMLForm_reset.html">HTMLForm_reset</a>)</li><li>- select box controls (<a href="../HTMLForm_Controls/HTMLForm_select.html">HTMLForm_select</a>)</li><li>- submit button controls (<a href="../HTMLForm_Controls/HTMLForm_submit.html">HTMLForm_submit</a>)</li><li>- text box controls (<a href="../HTMLForm_Controls/HTMLForm_text.html">HTMLForm_text</a>)</li><li>- textarea controls (<a href="../HTMLForm_Controls/HTMLForm_textarea.html">HTMLForm_textarea</a>)</li></ul></p></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+          <tr>
+        <td class="type" valign="top">mixed&nbsp;&nbsp;</td>
+        <td valign="top"><b>$arguments</b>&nbsp;&nbsp;</td>
+        <td><p>A list of arguments as required by the control you are adding.</p><p>Click above on each available control/element to see what arguments it accepts</p></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddError"></a>
+	<h3>method addError <span class="smalllinenumber">[line 358]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void addError(
+string
+$errorBlock, string
+$errorMessage, [string
+$bindToControl = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Appends an error message to an error block's error messages<br /><br /><p>You will need to use this method when you do custom validation in order to be able to send   any error message to one of the form's error blocks</p><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type" valign="top">string&nbsp;&nbsp;</td>
+        <td valign="top"><b>$errorBlock</b>&nbsp;&nbsp;</td>
+        <td>The name of the error block to append the error message to</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+          <tr>
+        <td class="type" valign="top">string&nbsp;&nbsp;</td>
+        <td valign="top"><b>$errorMessage</b>&nbsp;&nbsp;</td>
+        <td>The error message to append</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+          <tr>
+        <td class="type" valign="top">string&nbsp;&nbsp;</td>
+        <td valign="top"><b>$bindToControl</b>&nbsp;&nbsp;</td>
+        <td><p>(Optional) The ID of the control to bind the error to.</p><p>This has no importance unless you are relying on the script to automatically generate the form's                                   output for you. If you do so, than you MUST bind the error message to a control or the script will                                   not know where to show the error in the form!</p></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddVar"></a>
+	<h3>method addVar <span class="smalllinenumber">[line 280]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void addVar(
+mixed
+$variable, mixed
+$variableName)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Adds an user defined variable to be accessible in the form's template file<br /><br /><p><em>These variables are available in the form's template in the form {user.&lt;variableName&gt;}</em></p><p><em>You can also add arrays and access them as {user.&lt;variableName&gt;.&lt;key&gt;}</em></p><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type" valign="top">mixed&nbsp;&nbsp;</td>
+        <td valign="top"><b>$variable</b>&nbsp;&nbsp;</td>
+        <td>Name of an user defined variable</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+          <tr>
+        <td class="type" valign="top">mixed&nbsp;&nbsp;</td>
+        <td valign="top"><b>$variableName</b>&nbsp;&nbsp;</td>
+        <td>Name through which the variable will be available in the template file</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodparseBlock"></a>
+	<h3>method parseBlock <span class="smalllinenumber">[line 296]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void parseBlock(
+string
+$blockName, [array
+$blockVars = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Parses an user defined block in the template<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type" valign="top">string&nbsp;&nbsp;</td>
+        <td valign="top"><b>$blockName</b>&nbsp;&nbsp;</td>
+        <td>Name of the block to parse</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+          <tr>
+        <td class="type" valign="top">array&nbsp;&nbsp;</td>
+        <td valign="top"><b>$blockVars</b>&nbsp;&nbsp;</td>
+        <td>An associative array of name =&gt; value pairs of variables to be assigned to the parsed block</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodrender"></a>
+	<h3>method render <span class="smalllinenumber">[line 858]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void render(
+[string
+$template = ''], [boolean
+$toVar = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Renders the form<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type" valign="top">string&nbsp;&nbsp;</td>
+        <td valign="top"><b>$template</b>&nbsp;&nbsp;</td>
+        <td><p>The form template to parse</p><p><strong>Remember not to include &lt;form&gt; or other tags that appear in the general template set by the
+                              <a href="../HTMLForm/HTMLForm.html#var$template">$template</a> property!</strong></p></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+          <tr>
+        <td class="type" valign="top">boolean&nbsp;&nbsp;</td>
+        <td valign="top"><b>$toVar</b>&nbsp;&nbsp;</td>
+        <td>(optional) If set to TRUE, the output will be returned instead of being outputted to the screen</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+            <hr>
+        </td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodvalidate"></a>
+	<h3>method validate <span class="smalllinenumber">[line 408]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean validate(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Checks if the rules set to the form's controls are obeyed<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>TRUE if every rule was obeyed, FALSE if not</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Mon, 22 Sep 2008 11:03:10 +0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.3.0RC6</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

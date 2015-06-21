@@ -1,0 +1,43 @@
+<!--
+    NOTE THAT WE'RE NOT DEFINING NEITHER <FORM <ARGUMENTS> ></FORM> AND <INPUT TYPE="HIDDEN" NAME="MAX_FILE_SIZE">
+    BOTH BEING IN THE MAIN TEMPLATE IN THE /TEMPLATES FOLDER
+-->
+
+<!-- BEGIN: main -->
+<table>
+    <tr>
+        <td align="right" valign="top">
+            {controls.label_options}&nbsp;
+        </td>
+        <td>
+            {controls.options_o1}
+            {controls.label_o1}
+            {controls.options_o2}
+            {controls.label_o2}
+        </td>
+    </tr>
+    <tr>
+        <td align="right" valign="top">
+            {controls.label_options}&nbsp;
+        </td>
+        <td>
+            {controls.checkbox_c1}
+            {controls.label_c1}
+            {controls.checkbox_c2}
+            {controls.label_c2}
+        </td>
+    </tr>
+    <!-- BEGIN: e1 -->
+    <tr>
+        <td></td>
+        <td>{errors.e1}</td>
+    </tr>
+    <!-- END: e1 -->
+    <tr>
+        <td></td>
+        <td>
+            {controls.submit}
+        </td>
+    </tr>
+</table>
+<!-- END: main -->
