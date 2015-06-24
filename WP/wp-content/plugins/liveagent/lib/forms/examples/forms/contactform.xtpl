@@ -1,0 +1,57 @@
+<!--
+    NOTE THAT WE'RE NOT DEFINING NEITHER <FORM <ARGUMENTS> ></FORM> AND <INPUT TYPE="HIDDEN" NAME="MAX_FILE_SIZE">
+    BOTH BEING IN THE MAIN TEMPLATE IN THE /TEMPLATES FOLDER
+-->
+
+<!-- BEGIN: main -->
+<table>
+    <tr>
+        <td align="right" valign="top">
+            {controls.label_name}&nbsp;
+        </td>
+        <td>
+            {controls.name}
+        </td>
+    </tr>
+    <!-- BEGIN: e1 -->
+    <tr>
+        <td></td>
+        <td>{errors.e1}</td>
+    </tr>
+    <!-- END: e1 -->
+    <tr>
+        <td align="right" valign="top">
+            {controls.label_email}&nbsp;
+        </td>
+        <td>
+            {controls.email}
+        </td>
+    </tr>
+    <!-- BEGIN: e2 -->
+    <tr>
+        <td></td>
+        <td>{errors.e2}</td>
+    </tr>
+    <!-- END: e2 -->
+    <tr>
+        <td align="right" valign="top">
+            {controls.label_message}&nbsp;
+        </td>
+        <td>
+            {controls.message}
+        </td>
+    </tr>
+    <!-- BEGIN: e3 -->
+    <tr>
+        <td></td>
+        <td>{errors.e3}</td>
+    </tr>
+    <!-- END: e3 -->
+    <tr>
+        <td></td>
+        <td>
+            {controls.submit}
+        </td>
+    </tr>
+</table>
+<!-- END: main -->

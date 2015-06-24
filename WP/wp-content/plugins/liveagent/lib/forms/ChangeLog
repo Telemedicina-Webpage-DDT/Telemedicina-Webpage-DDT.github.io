@@ -1,0 +1,109 @@
+version 1.2 (September 04, 2008)
+
+    -   a new feature has been added: automatic output generation. if your form does not
+        need any special output format, you can simply call the render() method without
+        specifying a template name to let the script handle it, thus saving you some time
+        as you are not needed to also code the form's layout.
+    -   a new type of controls has been added: "html". with this you can insert arbitrary
+        HTML code into your forms. This is usefull when you don't use templates but
+        rather let the script generate your forms and you need to have some extra HTML in
+        your forms (notes, descriptions, etc) - because letting the script to automatically
+        generate your forms means that you don't have a template to insert your HTML code
+        into
+    -   arrays of custom rules can now be set for controls; up until now, only one custom
+        rule per control could be set
+    -   generated forms are now (more) W3C compliant
+    -   CAPTCHA is now case insensitive
+    -   default template is now nicer
+    -   better error reporting
+    -   fixed a few minor bugs
+    -   many documentation refinements
+
+version 1.1.1 (March 16, 2008)
+
+    -   rewritten css for the default template
+    -   fixed a bug where submitting array-like controls (multiple checkboxes with sharing
+        the same name or a "select" control with "multiple" set) would crash the script
+    -   fixed a bug where submitting text fields with empty spaces would pass the validation
+        for "required" fields
+    -   fixed a bug where the captcha image was not updated upon submission
+    -   upon submission, all characters were transformed to their applicable html entities,
+        which could cause a lot of headaches if you were submitting text in  other language
+        than english
+
+version 1.1 (November 30, 2007)
+
+    -   added *heavy* XSS (cross site scripting) injection prevention (the class used for
+        filtering for XSS injection is the Input class from the Code Igniter PHP framework
+        and it's used with permission)
+    -   previously some accented characters got scrambled upon submission as htmlentities()
+        was being called without the UTF-8 argument
+    -   fixed an error where, when having multiple forms on a page, all forms were processed
+        upon submission
+
+version 1.0 (June 02, 2007)
+
+    -   trying to change the main template of the class had no effects
+    -   the class was not working correctly in PHP 4.x.x
+    -   fixed an error where using a nonnumeric index for the first element in a "select"
+        control (indicating the "nothing selected" condition of the control) would lead to
+        a crash
+    -   added validation rule for a list of comma separated email addresses
+    -   many people have asked for it so i've added an example on how to use the radio
+        controls, the checkbox controls and on how to do quick custom validations
+    -   multiple instances of the form could not be created on the same page
+    -   error messages can now be customized from the main template (the one in the
+        /templates folder) - thanks to Claude Quezel for suggesting this one
+    -   custom blocks can now be parsed in the form's template by using the newly added
+        "parseBlock" method
+    -   the "addOptions" method of the "select" control was overwriting any previously set
+        options. now subsequent calls to this method will append options to the existing ones
+    -   custom form actions can now be specified - previously, forms were always submitted
+        to themselves
+    -   a new property was added: "locked". by default, when a form is reloaded after a
+        submission, all the controls will have their respective submitted value, while the
+        default value set by user will be ignored. setting this property to TRUE, will make
+        the controls preserve their user-provided default values, ignoring the submitted value
+    -   previously, only variables could be passed to the addVar method. now strings and
+        constant can also be passed
+    -   multiple options can now be preselected for select controls having the "multiple"
+        attribute set (read the documentation for the constructor of select controls)
+    -   in order to make the generated output valid XHTML 1.0, the label controls no longer
+        have the "name" attribute and the form has now the "action" attribute set; also
+        the "selected" attribute is now correctly set for "select" controls (thanks to
+        Claude Quezel)
+    -   made some changes in the main template's CSS file, provided by Claude Quezel, that
+        makes the fieldsets look in the same way in Firefox and Opera as in IE - thanks!
+    -   on some PHP installations file upload was not working (enctype and max_file_size
+        were not being set)
+
+version 1.0 BETA 3 (February 16, 2007)
+
+    -   for the 'select' control, if options were specified having literal keys
+        and the 'mandatory' rule was set, the control would never pass validation
+        (thanks to sridhar for reporting)
+    -   a major security issue was fixed where an attacker could inject arbitrary HTML
+        and/or JavaScript code along with the submitted data. now all the submitted data
+        is passed through the htmlentities() function and, if magic_quotes are on, are
+        stripslashed (thanks to Bartosz for reporting this one)
+    -   file uploads were not working because neither "enctype" nor MAX_FILE_SIZE were set 
+        upon the rendering of the form
+    -   if you would set a checkbox's state as "checked" by default, any subsequent submits
+        would set the checkbox's value to "checked" even if user would uncheck it
+        (thanks to sridhar for reporting)
+    -   "mandatory" rule could not be set to the "file" control
+        (thanks to sridhar for reporting)
+    -   a new method was added: "addVar()". through this method, user defined variables can be
+        made accessible from within the form's template file.
+    -   added a new control: "captcha" which generates CAPTCHA images
+    -   password controls no longer redisplay the entered value
+    
+version 1.0 BETA 2 (January 03, 2007)
+
+    -   in Firefox, trying to open the date picker would produce a JavaScript error
+    -   the icon for opening the date picker was not visible in Firefox
+
+version 1.0 BETA (December 19, 2006)
+
+    -   initial release
+

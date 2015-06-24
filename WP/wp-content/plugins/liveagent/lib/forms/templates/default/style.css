@@ -1,0 +1,197 @@
+form.zForm {
+
+
+}
+
+.zForm .button {
+
+    border: 2px solid #444444;
+    background-color: #006666;
+	padding: 3px;
+    font-weight: bold;
+    color: #ffffff;
+    
+}
+
+.zForm checkbox {
+
+}
+
+.zForm .date {
+
+    border: 2px solid #666666;
+	background-color: #FFFFCC;
+    float:left;
+    
+}
+
+.zForm .date-focus {
+
+    border: 2px solid #666666;
+    background-color: #ccccff;
+    float:left;
+
+}
+
+.zForm .date-icon {
+
+    background-image: url(calendar_icon.gif);
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    
+}
+
+.zForm div.row {
+
+	margin: 3px 0 3px 0;
+
+}
+
+.zForm div.column {
+
+	float: left;
+	margin: 3px;
+
+}
+
+.zForm div.hr {
+
+	height:1px;
+	background-color: #dedede;
+	border-bottom: 1px solid #dedede;
+
+}
+
+.zForm .error-message {
+
+	margin: 3px 0 3px 0;
+
+}
+
+.zForm .error-message span {
+
+    background-image: url(alert.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    margin: 5px 0 5px 0;
+    padding: 3px 0 3px 26px;
+    color: #c40000;
+    font-weight: bold;
+    display: block;
+    
+}
+
+.zForm .file {
+
+    border: 1px solid #666666;
+    
+}
+
+.zForm .file-focus {
+
+    border: 1px solid #666666;
+    background-color: #ccccff;
+    
+}
+
+.zForm label {
+
+	font-weight: bold;
+
+}
+
+.zForm .password {
+
+    border: 2px solid #666666;
+    background-color: #FFFFCC;
+
+}
+
+.zForm .password-focus {
+
+    border: 2px solid #666666;
+    background-color: #ccccff;
+    
+}
+
+.zForm .radio {
+
+}
+
+.zForm .reset {
+
+    border: 2px solid #444444;
+    background-color: #006666;
+	padding: 3px;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+
+.zForm select {
+
+    border: 1px solid #666666;
+    
+}
+
+.zForm .submit {
+
+    border: 2px solid #CC9900;
+    background-color: #FF9900;
+	padding: 3px;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+.zForm .text {
+
+    border: 2px solid #666666;
+    background-color: #FFFFCC;
+
+}
+
+.zForm .text-focus {
+
+    border: 2px solid #666666;
+    background-color: #ccccff;
+
+}
+
+.zForm textarea {
+
+	font-family: arial, tahoma, verdana;
+	font-size: 13px;
+	border: 2px solid #666666;
+    background-color: #FFFFCC;
+
+}
+
+.zForm textarea.focus {
+
+    border: 2px solid #666666;
+    background-color: #ccccff;
+
+}
+
+.HTMLForm-fieldset
+{
+    border: 1px solid #666666;
+    background-color: #f4f4f4;
+    padding : 6px 10px 12px 10px;   /* Looks like Opera & FF */
+    margin : 0px 2px;               /* Looks like Opera & FF */
+}
+
+.HTMLForm-fieldset-legend
+{
+    font-weight: bold;
+    padding: 2px 5px 2px 5px;
+    background-color: #666699;
+    border-bottom: 1px solid #666666;
+    color: #ffffff;
+}

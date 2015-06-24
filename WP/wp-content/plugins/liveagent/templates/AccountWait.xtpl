@@ -1,0 +1,17 @@
+<!-- BEGIN: main -->
+<table cellpadding="5px">
+    <tr>
+        <td><div class="logo"></div></td>
+        <td>
+            <h2>{controls.LiveAgentFreeHelpdeskAndLiveChat}</h2>
+            <p>{controls.LiveAgentFreeHelpdeskAndLiveChatDescription}</p>
+        </td>
+    </tr>
+</table>
+<div class="wrap">
+    <h2>{controls.Installing}</h2>
+    <p>{controls.YourAccountWillBeOnline}</p>
+    <p class="description">{controls.NoteSometimesAccount}</p>
+    <br/>
+    <div name="liveagent_wait_status">{controls.initializing}</div>            
+<!-- END: main -->

@@ -1,0 +1,310 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: liveagent\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-08 12:09+0100\n"
+"PO-Revision-Date: 2014-05-08 12:09+0100\n"
+"Last-Translator: Juraj Simon <jsimon@qualityunit.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: /home/juraj/wordpress/plugins/liveagent/trunk\n"
+"X-Poedit-Language: Slovak\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: liveagent.php:36
+#, php-format
+msgid "Critical error during %s plugin load %s"
+msgstr "Kritická chuba počas načítania %s modulu %s"
+
+#: liveagent.php:140
+msgid "Installing"
+msgstr "Inštalujem"
+
+#: liveagent.php:141
+msgid "Just a few more seconds"
+msgstr "Už len niekoľko sekúnd"
+
+#: liveagent.php:142
+msgid "Installation completed. Setting up..."
+msgstr "Inštalácia je hotová. Konfigurujem..."
+
+#: liveagent.php:143
+msgid "Are you sure you want to cancel your account?"
+msgstr "Ste si istí, že chcete zrušiť Váš účet?"
+
+#: liveagent.php:177
+#: liveagent.php:178
+msgid "LiveAgent"
+msgstr "LiveAgent"
+
+#: Auth.class.php:21
+msgid "Unable to ping LiveAgent remotelly: "
+msgstr "Neni možné kontaktovat vydialenú inštaláciu LiveAgent:"
+
+#: Auth.class.php:45
+msgid "Unable to login."
+msgstr "Neni možné sa pripojiť"
+
+#: Auth.class.php:52
+msgid "Answer from server: "
+msgstr "Odpoveď yo servera"
+
+#: PhpApi.class.php:1860
+msgid "Network connections are disabled"
+msgstr "Sieťové pripojenia sú vzpnuté"
+
+#: PhpApi.class.php:1913
+#, php-format
+msgid "Proxy failed: %s"
+msgstr "Proxy zlyhalo: %s"
+
+#: PhpApi.class.php:2225
+msgid "There were errors, please check the highlighted fields"
+msgstr "Chyba, prosím skontrolujte vyznačené polia"
+
+# ERROR: error description
+#: Form/Base.class.php:30
+msgid "ERROR"
+msgstr "CHYBA"
+
+#: Form/Base.class.php:82
+#: Form/Settings/ButtonCode.class.php:72
+msgid "Save"
+msgstr "Ulož"
+
+#: Form/Signup.class.php:63
+msgid "Create your Trial account"
+msgstr "Vytvorte si váš trial účet"
+
+#: Form/Signup.class.php:64
+msgid "Create your account"
+msgstr "Vytvorte Váš účet"
+
+#: Form/Signup.class.php:65
+#: Form/SignupWait.class.php:35
+#: Form/Settings/ButtonCode.class.php:63
+#: Form/Settings/Account.class.php:73
+msgid "LiveAgent - Live chat and helpdesk plugin for Wordpress"
+msgstr "LiveAgent - Live chat and helpdesk plugin for Wordpress"
+
+#: Form/Signup.class.php:66
+#: Form/SignupWait.class.php:36
+msgid "We want you to enjoy the full functionality of LiveAgent with the trial account."
+msgstr "Critical error during %s plugin load %s"
+
+#: Form/Signup.class.php:67
+msgid "Domain selection"
+msgstr "Doména"
+
+#: Form/Signup.class.php:68
+msgid "Email"
+msgstr "Email"
+
+#: Form/Signup.class.php:69
+msgid "Full name"
+msgstr "Celé meno"
+
+#: Form/Signup.class.php:70
+msgid "Your first name and last name"
+msgstr "Vaše meno a priezvisko"
+
+#: Form/Signup.class.php:71
+msgid ".ladesk.com"
+msgstr ".ladesk.com"
+
+# By creating an account I agree to Terms & Conditions
+#: Form/Signup.class.php:72
+msgid "By creating an account I agree to"
+msgstr "Vytvorením tohoto účtu súhlasím s "
+
+#: Form/Signup.class.php:73
+msgid "Terms & Conditions"
+msgstr "Obchodnými podmienkami"
+
+#: Form/Signup.class.php:74
+msgid "Skip this step, I already have an account"
+msgstr "Preskočiť tento krok, už mám vlastný účet"
+
+#: Form/SignupWait.class.php:31
+msgid "Account installation"
+msgstr "Inštalácia účtu"
+
+#: Form/SignupWait.class.php:32
+msgid "Your account will be online within the next few minutes. In the meantime, you should recieve a confirmation email including your account credentials."
+msgstr "Váš účet bude dostupný za niekoľko minút. Zároveň obdržíte email s Vašimi prihlasovacími údajmi."
+
+# Note: Sometimes the process account creation may take a bit longer
+#: Form/SignupWait.class.php:33
+msgid "Note: Sometimes the process account creation may take"
+msgstr "Poznámka:Niekedy môže proces inštalácie trvať "
+
+# Note: Sometimes the process account creation may take a bit longer
+#: Form/SignupWait.class.php:33
+msgid "a bit longer"
+msgstr "dlhšie"
+
+#: Form/SignupWait.class.php:34
+msgid "Initializing..."
+msgstr "Inicializujem"
+
+#: Form/Handler.class.php:87
+msgid "Unable to connect to"
+msgstr "Nie je možné sa pripojiť k "
+
+#: Form/Handler.class.php:92
+msgid "Unable to connect - wrong name or password"
+msgstr "Neni možné sa pripojiť - nesprávne meno alebo heslo"
+
+#: Form/Handler.class.php:108
+msgid "Unable to connect"
+msgstr "Nie je možné sa pripojiť"
+
+#: Form/Handler.class.php:113
+msgid "Wrong username or password"
+msgstr "Nesprávne meno alebo heslo"
+
+#: Form/Handler.class.php:185
+msgid "Signup failed. Please try again in few minutes."
+msgstr "Vztvorenie zlyhalo. Prosím opakujte akciu za niekoľko minút."
+
+#: Form/Settings/ButtonCode.class.php:24
+msgid "The chat button is currently disabled."
+msgstr "Chat tlačidlo je momentálne vypnuté"
+
+# Do you need any help with this plugin? Feel free to contact us
+#: Form/Settings/ButtonCode.class.php:62
+#: Form/Settings/Account.class.php:72
+msgid "Do you need any help with this plugin? Feel free to "
+msgstr "Potrebujete pomoc s týmto modulom? Prosím "
+
+# Do you need any help with this plugin? Feel free to contact us
+#: Form/Settings/ButtonCode.class.php:62
+#: Form/Settings/Account.class.php:72
+msgid "contact us"
+msgstr "kontaktujte nás"
+
+#: Form/Settings/ButtonCode.class.php:64
+msgid "Your account"
+msgstr "Váš účet"
+
+#: Form/Settings/ButtonCode.class.php:65
+msgid "Account url"
+msgstr "Url adresa"
+
+#: Form/Settings/ButtonCode.class.php:68
+msgid "login"
+msgstr "prihlásiť sa"
+
+#: Form/Settings/ButtonCode.class.php:69
+msgid "change"
+msgstr "zmeniť"
+
+#: Form/Settings/ButtonCode.class.php:73
+msgid "Button code"
+msgstr "Kód tlačidla"
+
+#: Form/Settings/ButtonCode.class.php:74
+msgid "Place here the code from your LiveAgent admin panel"
+msgstr "Sem vložte kód tlačidla z Vašeho LiveAgent adminstrátorského panelu"
+
+# Okay, I want to cancel this change
+#: Form/Settings/Account.class.php:47
+msgid "Okay, I want to"
+msgstr "Rozumiem, "
+
+# Okay, I want to cancel this change
+#: Form/Settings/Account.class.php:47
+msgid "cancel this change"
+msgstr "vráť túto zmenu"
+
+#: Form/Settings/Account.class.php:69
+msgid "Url"
+msgstr "Url"
+
+#: Form/Settings/Account.class.php:70
+msgid "Username"
+msgstr "Prihlasovacie meno"
+
+#: Form/Settings/Account.class.php:71
+msgid "Password"
+msgstr "Heslo"
+
+#: Form/Settings/Account.class.php:74
+msgid "Account settings"
+msgstr "Nastavenia účtu"
+
+#: Form/Settings/Account.class.php:75
+msgid "Url where your LiveAgent installation is located"
+msgstr "Url adresa, na ktorej sa nachádza vaša inštalácia LiveAgent"
+
+#: Form/Settings/Account.class.php:76
+msgid "Username which you use to login to your Live Agnet"
+msgstr "Prihlasovacie meno, ktoré používate na prihlásenie sa do Vašej inštalácie LiveAgent"
+
+#: Form/Settings/Account.class.php:77
+msgid "Your password"
+msgstr "Vaše heslo"
+
+#: Form/Settings/Account.class.php:81
+msgid "Save Account Settings"
+msgstr "Ulož nastavenia účtu"
+
+#: Form/Settings/Account.class.php:82
+msgid "Cancel account"
+msgstr "Zrušiť účet"
+
+#: Form/Settings/Account.class.php:83
+msgid "this will clear all your existing account settings and offer you to create a new trial account"
+msgstr "this will clear all your existing account settings and offer you to create a new trial account"
+
+#: Form/Validator/Signup.class.php:15
+#: Form/Validator/Account.class.php:15
+msgid "You must enter valid full name"
+msgstr "Musíte zadať platné celé meno"
+
+#: Form/Validator/Signup.class.php:20
+#: Form/Validator/Account.class.php:20
+msgid "You must enter valid email address"
+msgstr "Musíte zadať platnú emailovú adresu"
+
+#: Form/Validator/Signup.class.php:24
+#: Form/Validator/Account.class.php:24
+msgid "You must enter valid domain name"
+msgstr "Musíte zadať platnú doménu"
+
+# do not translate this
+#: test/wpla/PhpApiTest.class.php:18
+#, php-format
+msgid "hello my name is %s"
+msgstr "Dobrý deň, moje meno je %s"
+
+# do not translate this
+#: test/wpla/PhpApiTest.class.php:24
+#, php-format
+msgid "Hello %s, do you need %s?"
+msgstr "Dobrý deň %s, potrebujete %s?"
+
+#~ msgid "Create your Free account"
+#~ msgstr "Vytvorte Váš účet"
+
+#~ msgid ""
+#~ "We want you to enjoy the full functionality of LiveAgent with the free "
+#~ "account. It does not limit the number of agents and you have the option "
+#~ "to activate the most of available features. The only limitation is max. "
+#~ "50 conversations per month"
+#~ msgstr ""
+#~ "Využite plnú funkcionalitu LiveAgent s Vašim účtom, ktorý yískate úplne "
+#~ "zadarmo! Počet agentov neni limitovaný a máte k dispozícií takmer všetky "
+#~ "dostupné rozšírenia a moduly. Prejsť na platenú verziu môžete kedykoľvek. "
+#~ "Jediným obmedzením je max. počet 50 konverzácií za mesiac."
+
+#~ msgid "read more"
+#~ msgstr "dozvedieť sa viac"
+
+#~ msgid "Login to Admin panel"
+#~ msgstr "Prihlásiť sa do admin panelu"

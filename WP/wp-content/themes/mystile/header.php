@@ -62,7 +62,6 @@ global $woo_options, $woocommerce;
 					echo '<ul class="nav wc-nav">';
 					woocommerce_cart_link();
 					echo '<li class="checkout"><a href="'.esc_url($woocommerce->cart->get_checkout_url()).'">'.__('Finalizar Compra','woothemes').'</a></li>';
-                    echo '<li class="checkout"><a href="http://localhost/WP/mi-cuenta/customer-logout/">'.__('Cerrar sesión','woothemes').'</a></li>';
 					echo get_search_form();
 					echo '</ul>';
 				}
@@ -79,7 +78,7 @@ global $woo_options, $woocommerce;
 
 
 	    <hgroup>
-            <p><img src="http://localhost/WP/wp-content/uploads/2015/06/logo1.png" class="img-responsive"  /></p>
+            <h1><img src="http://localhost/WP/wp-content/uploads/2015/06/logo1.png" border=0  /></h1>
 	    	 <?php
 			    $logo = esc_url( get_template_directory_uri() . '/images/logo.png' );
 				if ( isset( $woo_options['woo_logo'] ) && $woo_options['woo_logo'] != '' ) { $logo = $woo_options['woo_logo']; }

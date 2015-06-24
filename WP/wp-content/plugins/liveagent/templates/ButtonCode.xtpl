@@ -1,0 +1,51 @@
+<!-- BEGIN: main -->
+<table cellpadding="5px">
+    <tr>
+        <td><div class="logo"></div></td>
+        <td>
+            <h2>{controls.LiveAgentFreeHelpdeskAndLiveChat}</h2>
+            <p>{controls.DoYouNeedHelp}</p>
+        </td>
+    </tr>
+</table>
+<div class="wrap">
+    <h2>{controls.YourAccount}</h2>
+    {controls.errorMessages}
+    {controls.infoMessages}
+    <form method="post" action="options.php">
+        {controls.form-settings}    
+        <table class="form-table">
+            <tr>
+                <th><label for="la-url">{controls.url}: </label></th>
+                <td>
+                    {controls.la-url}&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>{controls.loginLink}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span><a href="{controls.changeLinkUrl}">{controls.changeLink}</a></span>
+                </td>            
+            </tr>
+        </table>
+        <br/>
+        <h3>Integration</h3>
+        <table class="form-table">
+            <tr>
+                <th><label for="la-buttons_buttoncode">{controls.buttonCode}</label></th>
+                <td>
+                    <fieldset>
+                        <legend class="screen-reader-text">
+                            <span>{controls.buttonCode}</span>
+                        </legend>
+                        <p>
+                            <label for="la-buttons_buttoncode">{controls.PlaceHereCode}</label>
+                        </p>
+                        <p>
+                            {controls.la-buttons_buttoncode}
+                        </p>                        
+                    </fieldset>
+                </td>            
+            </tr>            
+        </table>
+    </form>
+    <p class="submit"> 
+        <input type="submit" value="{controls.submit}" class="button-primary" id="submit" name="submit">
+    </p>
+<!-- END: main -->
